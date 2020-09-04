@@ -1,0 +1,46 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>image/12.webp</file>
+        <file>image/aboutapp.png</file>
+        <file>image/aboutmusic.png</file>
+        <file>image/aboutUI.png</file>
+        <file>image/button1.png</file>
+        <file>image/exit.png</file>
+        <file>image/MenuSceneStartButton.png</file>
+        <file>image/newaboutapp,png.png</file>
+        <file>image/newaboutmusic.png</file>
+        <file>image/newaboutUI.png</file>
+        <file>image/newexit.png</file>
+        <file>image/photot1.jpg</file>
+        <file>image/png (1).png</file>
+        <file>image/png.png</file>
+        <file>image/scene.jpg</file>
+        <file>sound/11111.wav</file>
+        <file>sound/22222.wav</file>
+        <file>sound/33333.wav</file>
+        <file>sound/44444.wav</file>
+        <file>sound/mymusic.mp3</file>
+        <file>image/aboutUInew.png</file>
+        <file>image/back.png</file>
+        <file>image/aboutappnew.png</file>
+    </qresource>
+    <qresource prefix="/">
+        <file>icon/a.png</file>
+        <file>icon/bigger.jpg</file>
+        <file>icon/e.png</file>
+        <file>icon/k.png</file>
+        <file>icon/l.png</file>
+        <file>icon/nswing.jpg</file>
+        <file>icon/r.png</file>
+        <file>icon/sswing.jpg</file>
+        <file>icon/u.png</file>
+        <file>icon/v.png</file>
+        <file>icon/smaller.jpg</file>
+        <file>icon/background2.jpg</file>
+        <file>icon/Slide.png</file>
+        <file>icon/20200831100948642_easyicon_net_64.ico</file>
+        <file>icon/title_end.ico</file>
+        <file>icon/timg (1).png</file>
+        <file>icon/t.png</file>
+    </qresource>
+</RCC>

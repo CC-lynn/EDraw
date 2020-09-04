@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>941</width>
+    <height>667</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QGraphicsView" name="graphicsView">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+      </property>
+      <property name="viewportUpdateMode">
+       <enum>QGraphicsView::SmartViewportUpdate</enum>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>941</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>元器件</string>
+    </property>
+    <addaction name="action_addlight"/>
+    <addaction name="action_addrect"/>
+    <addaction name="action_t"/>
+    <addaction name="action_k"/>
+    <addaction name="action_U"/>
+    <addaction name="action_E"/>
+    <addaction name="action_A"/>
+    <addaction name="action_V"/>
+    <addaction name="actionSlide"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>功能</string>
+    </property>
+    <addaction name="actionBigger"/>
+    <addaction name="action_smaller"/>
+    <addaction name="action_turnleft"/>
+    <addaction name="action_turnright"/>
+    <addaction name="action_undo"/>
+    <addaction name="action_word"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>控件</string>
+    </property>
+    <addaction name="actiontool_bar"/>
+    <addaction name="action_components"/>
+   </widget>
+   <widget class="QMenu" name="menu_4">
+    <property name="title">
+     <string>菜单</string>
+    </property>
+    <addaction name="actionnew"/>
+    <addaction name="action"/>
+    <addaction name="actionOpen"/>
+    <addaction name="actionSave"/>
+    <addaction name="action_saveaspicture"/>
+   </widget>
+   <widget class="QMenu" name="menu_5">
+    <property name="title">
+     <string>帮助</string>
+    </property>
+    <addaction name="action_qt"/>
+   </widget>
+   <addaction name="menu_4"/>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_3"/>
+   <addaction name="menu_5"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="separator"/>
+   <addaction name="actionBigger"/>
+   <addaction name="action_smaller"/>
+   <addaction name="separator"/>
+   <addaction name="action_turnleft"/>
+   <addaction name="action_turnright"/>
+   <addaction name="separator"/>
+   <addaction name="action_undo"/>
+   <addaction name="separator"/>
+   <addaction name="action_word"/>
+   <addaction name="separator"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar_2">
+   <property name="windowTitle">
+    <string>toolBar_2</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>true</bool>
+   </attribute>
+   <addaction name="action_addlight"/>
+   <addaction name="separator"/>
+   <addaction name="action_addrect"/>
+   <addaction name="separator"/>
+   <addaction name="action_t"/>
+   <addaction name="separator"/>
+   <addaction name="action_k"/>
+   <addaction name="separator"/>
+   <addaction name="action_U"/>
+   <addaction name="separator"/>
+   <addaction name="action_E"/>
+   <addaction name="separator"/>
+   <addaction name="action_A"/>
+   <addaction name="separator"/>
+   <addaction name="action_V"/>
+   <addaction name="separator"/>
+   <addaction name="actionSlide"/>
+  </widget>
+  <action name="actionBigger">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icon/bigger.jpg</normaloff>:/icon/bigger.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>放大</string>
+   </property>
+   <property name="shortcut">
+    <string>+</string>
+   </property>
+  </action>
+  <action name="action_smaller">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icon/smaller.jpg</normaloff>:/icon/smaller.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>缩小</string>
+   </property>
+   <property name="shortcut">
+    <string>-</string>
+   </property>
+  </action>
+  <action name="action_turnleft">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icon/nswing.jpg</normaloff>:/icon/nswing.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>逆时针</string>
+   </property>
+   <property name="shortcut">
+    <string>Left</string>
+   </property>
+  </action>
+  <action name="action_turnright">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icon/sswing.jpg</normaloff>:/icon/sswing.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>顺时针</string>
+   </property>
+   <property name="shortcut">
+    <string>Right</string>
+   </property>
+  </action>
+  <action name="action_undo">
+   <property name="text">
+    <string>取消变换</string>
+   </property>
+  </action>
+  <action name="action_word">
+   <property name="text">
+    <string>添加文字</string>
+   </property>
+  </action>
+  <action name="action_addlight">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icon/l.png</normaloff>:/icon/l.png</iconset>
+   </property>
+   <property name="text">
+    <string>小灯泡</string>
+   </property>
+   <property name="toolTip">
+    <string>小灯泡_L</string>
+   </property>
+   <property name="shortcut">
+    <string>L</string>
+   </property>
+  </action>
+  <action name="action_addrect">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icon/r.png</normaloff>:/icon/r.png</iconset>
+   </property>
+   <property name="text">
+    <string>电阻</string>
+   </property>
+   <property name="shortcut">
+    <string>R</string>
+   </property>
+  </action>
+  <action name="action_t">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icon/t.png</normaloff>:/icon/t.png</iconset>
+   </property>
+   <property name="text">
+    <string>二极管</string>
+   </property>
+   <property name="shortcut">
+    <string>T</string>
+   </property>
+  </action>
+  <action name="action_k">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icon/k.png</normaloff>:/icon/k.png</iconset>
+   </property>
+   <property name="text">
+    <string>开关</string>
+   </property>
+   <property name="shortcut">
+    <string>K</string>
+   </property>
+  </action>
+  <action name="action_U">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icon/u.png</normaloff>:/icon/u.png</iconset>
+   </property>
+   <property name="text">
+    <string>电容</string>
+   </property>
+   <property name="shortcut">
+    <string>U</string>
+   </property>
+  </action>
+  <action name="action_E">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icon/e.png</normaloff>:/icon/e.png</iconset>
+   </property>
+   <property name="text">
+    <string>电源</string>
+   </property>
+   <property name="shortcut">
+    <string>E</string>
+   </property>
+  </action>
+  <action name="action_A">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icon/a.png</normaloff>:/icon/a.png</iconset>
+   </property>
+   <property name="text">
+    <string>安培表</string>
+   </property>
+   <property name="shortcut">
+    <string>A</string>
+   </property>
+  </action>
+  <action name="action_V">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icon/v.png</normaloff>:/icon/v.png</iconset>
+   </property>
+   <property name="text">
+    <string>伏特表</string>
+   </property>
+   <property name="shortcut">
+    <string>V</string>
+   </property>
+  </action>
+  <action name="action_qt">
+   <property name="text">
+    <string>帮助</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+H</string>
+   </property>
+  </action>
+  <action name="actionOpen">
+   <property name="text">
+    <string>打开</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="text">
+    <string>保存</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionSlide">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icon/Slide.png</normaloff>:/icon/Slide.png</iconset>
+   </property>
+   <property name="text">
+    <string>滑动变阻器</string>
+   </property>
+   <property name="shortcut">
+    <string>S</string>
+   </property>
+  </action>
+  <action name="actiontool_bar">
+   <property name="text">
+    <string>工具栏</string>
+   </property>
+  </action>
+  <action name="action_components">
+   <property name="text">
+    <string>元器件栏</string>
+   </property>
+  </action>
+  <action name="action">
+   <property name="text">
+    <string>清空</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+C</string>
+   </property>
+  </action>
+  <action name="actionnew">
+   <property name="text">
+    <string>新建</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="action_saveaspicture">
+   <property name="text">
+    <string>另存为图片</string>
+   </property>
+  </action>
+  <action name="action_openaspicture">
+   <property name="text">
+    <string>打开图片</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="icons.qrc"/>
+ </resources>
+ <connections/>
+</ui>
